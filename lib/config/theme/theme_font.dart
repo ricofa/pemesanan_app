@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppFont {
+class ThemeFont {
   static TextStyle get hero => const TextStyle(
         fontSize: 72,
         fontWeight: FontWeight.w700,

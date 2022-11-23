@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class AppColor {
+class ThemeColor {
   static const Color inkBlack = Color(0xFF191D21);
   static const Color inkGrey1 = Color(0xFF656F77);
   static const Color inkGrey2 = Color(0xFFACB8C2);
