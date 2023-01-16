@@ -6,7 +6,7 @@ class PrimaryButton extends StatelessWidget {
   const PrimaryButton(
       {Key? key,
       this.buttonType = PrimaryButtonType.type3,
-      this.onPressed,
+      required this.onPressed,
       required this.text,
       this.width = 78})
       : super(key: key);
@@ -26,8 +26,8 @@ class PrimaryButton extends StatelessWidget {
 
   Widget _type1() {
     return SizedBox(
-      width: width.w,
-      height: 24.h,
+      width: width,
+      height: 24,
       child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
@@ -44,8 +44,8 @@ class PrimaryButton extends StatelessWidget {
 
   Widget _type2() {
     return SizedBox(
-      width: width.w,
-      height: 32.h,
+      width: width,
+      height: 32,
       child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
@@ -62,8 +62,8 @@ class PrimaryButton extends StatelessWidget {
 
   Widget _type3() {
     return SizedBox(
-      width: width.w,
-      height: 57.h,
+      width: width,
+      height: 57,
       child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(

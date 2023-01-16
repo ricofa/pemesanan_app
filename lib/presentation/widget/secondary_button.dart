@@ -6,7 +6,7 @@ class SecondaryButton extends StatelessWidget {
   const SecondaryButton(
       {Key? key,
         this.buttonType = SecondaryButtonType.type3,
-        this.onPressed,
+        required this.onPressed,
         required this.text,
         this.width = 78})
       : super(key: key);
@@ -26,8 +26,8 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type1() {
     return SizedBox(
-      width: width.w,
-      height: 24.h,
+      width: width,
+      height: 24,
       child: OutlinedButton(
           onPressed: onPressed,
           style: OutlinedButton.styleFrom(
@@ -45,8 +45,8 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type2() {
     return SizedBox(
-      width: width.w,
-      height: 32.h,
+      width: width,
+      height: 32,
       child: OutlinedButton(
           onPressed: onPressed,
           style: OutlinedButton.styleFrom(
@@ -64,8 +64,8 @@ class SecondaryButton extends StatelessWidget {
 
   Widget _type3() {
     return SizedBox(
-      width: width.w,
-      height: 57.h,
+      width: width,
+      height: 57,
       child: OutlinedButton(
           onPressed: onPressed,
           style: OutlinedButton.styleFrom(
