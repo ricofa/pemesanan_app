@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pemesananapp/data/src/string_img.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pemesananapp/presentation/pages/pages.dart';
 
 void main() {
@@ -13,14 +13,20 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Poppins',
-      ),
-      home: const OnboardingPage(),
-    );
+    return ScreenUtilInit(
+        designSize: const Size(375, 812),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return MaterialApp(
+            title: 'Flutter Demo',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+              fontFamily: 'Poppins',
+            ),
+            home: const OnboardingPage(),
+          );
+        });
   }
 }
-

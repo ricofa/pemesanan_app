@@ -4,7 +4,6 @@ import 'package:pemesananapp/presentation/pages/onboarding/component/component.d
 import 'package:pemesananapp/utils/extension/sized_extension.dart';
 
 import 'onboarding_cubit.dart';
-import 'onboarding_state.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -23,13 +22,13 @@ class OnboardingPage extends StatelessWidget {
         padding: const EdgeInsets.only(top: 20, left: 16, right: 16),
         child: Column(
             children: [
-              OnboardingImage(),
+              const OnboardingImage(),
               32.0.height,
-              OnboardingTitle(),
+              const OnboardingTitle(),
               45.0.height,
-              OnboardingIndicator(),
+              const OnboardingIndicator(),
               53.0.height,
-              OnboardingButton(),
+              const OnboardingButton(),
               83.0.height
             ],
           ),
